@@ -1,4 +1,3 @@
-# Contains both dicts
 {
     "R1": {
         "addresses": {
