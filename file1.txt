@@ -1,0 +1,97 @@
+{
+    "R1": {
+        "addresses": {
+            "interface_name": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            }
+        }
+    },
+    "R5": {
+        "addresses": {
+            "interface_name": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            }
+        }
+    },
+    "R2": {
+        "addresses": {
+            "interface_name": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            },
+            "interface_name_2": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            }
+        }
+    },
+    "R3": {
+        "addresses": {
+            "interface_name": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            },
+            "interface_name_2": {
+                "v4": "ipv4",
+                "v6_linklocal": "ipv6_fe",
+                "v6_public": "ipv6_public"
+            }
+        }
+    },
+    "R4": {
+        "addresses": {
+            "interface_name_2": {
+                "v4": "198.51.100.4",
+                "v6_linklocal": "fe80:0000:0000:0000:c804:31ff:fecf:001c",
+                "v6_public": "2001:0db8:dede:0001:0000:0000:0000:0001"
+            },
+            "FastEthernet0/0": {
+                "v4": "198.50.100.1",
+                "v6_linklocal": "fe80:0000:0000:0000:c804:31ff:fecf:0000",
+                "v6_public": "2001:0db8:abcd:0001:0000:0000:0000:0001"
+            }
+        }
+    }
+}{
+    "R1": {
+        "interface": {
+            "Status": "status"
+        }
+    },
+    "R5": {
+        "interface": {
+            "Status": "status"
+        }
+    },
+    "R2": {
+        "interface": {
+            "Status": "status"
+        },
+        "interface_2": {
+            "Status": "status"
+        }
+    },
+    "R4": {
+        "FastEthernet0/0": {
+            "Status": "up"
+        },
+        "FastEthernet1/0": {
+            "Status": "up"
+        }
+    },
+    "R3": {
+        "interface": {
+            "Status": "status"
+        },
+        "interface_2": {
+            "Status": "status"
+        }
+    }
+}
