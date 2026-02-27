@@ -7,9 +7,9 @@
                 "v6_public": "fe80:0000:0000:0000:0211:22ff:fe33:4455"
             },
             "FastEthernet0/0": {
-                "v4": "198.50.100.9",
-                "v6_linklocal": "2001:0db8:dcba:0001:0015:573d:7fd3:e484",
-                "v6_public": "2001:0db8:abcd:0001:0211:22ff:fe33:4455"
+                "v4": "198.50.100.2",
+                "v6_linklocal": "2001:0db8:abcd:0001:0211:22ff:fe33:4455",
+                "v6_public": "2001:0db8:dcba:0001:0015:573d:7fd3:e484"
             }
         }
     },
@@ -22,8 +22,8 @@
             },
             "FastEthernet0/0": {
                 "v4": "198.50.100.3",
-                "v6_linklocal": "2001:0db8:dcba:0001:95f1:b642:7ae2:ef29",
-                "v6_public": "2001:0db8:abcd:0001:c803:31ff:fec0:0000"
+                "v6_linklocal": "2001:0db8:abcd:0001:c803:31ff:fec0:0000",
+                "v6_public": "2001:0db8:dcba:0001:95f1:b642:7ae2:ef29"
             }
         }
     },
@@ -35,27 +35,25 @@
                 "v6_public": "fe80:0000:0000:0000:c804:31ff:fecf:0000"
             },
             "FastEthernet0/0": {
-                "v4": "198.50.100.1",
-                "v6_linklocal": "2001:0db8:dede:0001:0000:0000:0000:0001",
-                "v6_public": "2001:0db8:abcd:0001:0000:0000:0000:0001"
+                "v4": "198.50.100.18",
+                "v6_linklocal": "2001:0db8:abcd:0001:0000:0000:0000:0001",
+                "v6_public": "2001:0db8:dede:0001:0000:0000:0000:0001"
             }
         }
     },
     "R1": {
         "addresses": {
-            "interface_name": {
-                "v4": "ipv4",
-                "v6_linklocal": "ipv6_fe",
-                "v6_public": "ipv6_public"
+            "FastEthernet0/0": {
+                "v4": "198.52.100.1",
+                "v6_linklocal": "fe80:0000:0000:0000:c801:31ff:fea2:001c"
             }
         }
     },
     "R5": {
         "addresses": {
-            "interface_name": {
-                "v4": "ipv4",
-                "v6_linklocal": "ipv6_fe",
-                "v6_public": "ipv6_public"
+            "FastEthernet0/0": {
+                "v4": "198.50.100.5",
+                "v6_linklocal": "fe80:0000:0000:0000:c805:31ff:fefc:0000"
             }
         }
     }
@@ -85,109 +83,13 @@
         }
     },
     "R1": {
-        "interface": {
-            "Status": "status"
+        "FastEthernet0/0": {
+            "Status": "up"
         }
     },
     "R5": {
-        "interface": {
-            "Status": "status"
-        }
-    }
-}{
-    "R2": {
-        "addresses": {
-            "interface_name_2": {
-                "v4": "198.52.100.3",
-                "v6_linklocal": "fe80:0000:0000:0000:c802:31ff:feb1:001c",
-                "v6_public": "fe80:0000:0000:0000:0211:22ff:fe33:4455"
-            },
-            "FastEthernet0/0": {
-                "v4": "198.50.100.9",
-                "v6_linklocal": "2001:0db8:dcba:0001:0015:573d:7fd3:e484",
-                "v6_public": "2001:0db8:abcd:0001:0211:22ff:fe33:4455"
-            }
-        }
-    },
-    "R3": {
-        "addresses": {
-            "interface_name_2": {
-                "v4": "198.52.100.5",
-                "v6_linklocal": "fe80:0000:0000:0000:c803:31ff:fec0:001c",
-                "v6_public": "fe80:0000:0000:0000:c803:31ff:fec0:0000"
-            },
-            "FastEthernet0/0": {
-                "v4": "198.50.100.3",
-                "v6_linklocal": "2001:0db8:dcba:0001:95f1:b642:7ae2:ef29",
-                "v6_public": "2001:0db8:abcd:0001:c803:31ff:fec0:0000"
-            }
-        }
-    },
-    "R4": {
-        "addresses": {
-            "interface_name_2": {
-                "v4": "198.51.100.4",
-                "v6_linklocal": "fe80:0000:0000:0000:c804:31ff:fecf:001c",
-                "v6_public": "fe80:0000:0000:0000:c804:31ff:fecf:0000"
-            },
-            "FastEthernet0/0": {
-                "v4": "198.50.100.1",
-                "v6_linklocal": "2001:0db8:dede:0001:0000:0000:0000:0001",
-                "v6_public": "2001:0db8:abcd:0001:0000:0000:0000:0001"
-            }
-        }
-    },
-    "R1": {
-        "addresses": {
-            "interface_name": {
-                "v4": "ipv4",
-                "v6_linklocal": "ipv6_fe",
-                "v6_public": "ipv6_public"
-            }
-        }
-    },
-    "R5": {
-        "addresses": {
-            "interface_name": {
-                "v4": "ipv4",
-                "v6_linklocal": "ipv6_fe",
-                "v6_public": "ipv6_public"
-            }
-        }
-    }
-}{
-    "R2": {
         "FastEthernet0/0": {
             "Status": "up"
-        },
-        "FastEthernet1/0": {
-            "Status": "up"
-        }
-    },
-    "R4": {
-        "FastEthernet0/0": {
-            "Status": "up"
-        },
-        "FastEthernet1/0": {
-            "Status": "up"
-        }
-    },
-    "R3": {
-        "FastEthernet0/0": {
-            "Status": "up"
-        },
-        "FastEthernet1/0": {
-            "Status": "up"
-        }
-    },
-    "R1": {
-        "interface": {
-            "Status": "status"
-        }
-    },
-    "R5": {
-        "interface": {
-            "Status": "status"
         }
     }
 }
